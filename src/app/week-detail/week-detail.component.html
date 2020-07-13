@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <th>Project</th>
+        <th *ngFor="let wd of weekDates">{{wd}}</th>
+    </tr>
+    
+    <tr *ngFor="let p of projects">
+        <td>{{p.project}}</td>
+        <td *ngFor="let wd of weekDates"><input/></td>
+    </tr>
+</table>
